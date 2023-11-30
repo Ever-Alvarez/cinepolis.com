@@ -13,9 +13,9 @@ class Cinepolis extends CI_Controller{
       'title' => 'Cinépolis - Página de inicio',
     ];
 
-    $this->load->view('header', $data);
+    $this->load->view('plantillas/header', $data);
     $this->load->view('index');
-    $this->load->view('footer');
+    $this->load->view('plantillas/footer');
   }
 
   public function peliculas(){
@@ -32,9 +32,9 @@ class Cinepolis extends CI_Controller{
     //print_r($peliculas);
     //echo"</pre>";
   
-    $this->load->view('header', $data);
+    $this->load->view('plantillas/header', $data);
     $this->load->view('peliculas/index', $data);
-    //$this->load->view('footer');
+    //$this->load->view('plantillas/footer');
 
   }
 
