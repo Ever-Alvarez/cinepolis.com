@@ -34,7 +34,7 @@ class Cinepolis extends CI_Controller{
   
     $this->load->view('plantillas/header', $data);
     $this->load->view('peliculas/index', $data);
-    //$this->load->view('plantillas/footer');
+    $this->load->view('plantillas/footer');
 
   }
 
