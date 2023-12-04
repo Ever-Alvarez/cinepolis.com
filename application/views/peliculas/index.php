@@ -1,4 +1,5 @@
-<div class="div-table">
+<main>
+    <div class="div-table">
     <table cellpadding="0" cellspacing="0" border="1" align="center">
         <thead>
             <tr>
@@ -29,4 +30,5 @@
             <?php endforeach;?>
         </tbody>
     </table>
-</div>
+    </div>
+</main>
