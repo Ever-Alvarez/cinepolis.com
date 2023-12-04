@@ -54,7 +54,6 @@ nav ul li a {
 
 main {
   /* position: relative; */
-  padding: 20px;
   border: solid yellow;
   z-index: 1;
   /* min-height: 100vh; */
