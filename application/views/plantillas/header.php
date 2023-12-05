@@ -35,8 +35,8 @@
     <h1>Cinépolis</h1>
     <nav>
       <ul>
-        <li><a href="cinepolis/peliculas/index" tarjet="_blank">Peliculas</a></li>
-        <li><a href="cinepolis/actores/index">Actores</a></li>
+        <li><a href="/cinepolis/peliculas/index">Peliculas</a></li>
+        <li><a href="/cinepolis/actores/index">Actores</a></li>
         <li><a href="">directores</a></li>
         <li><a href="">Productora</a></li>
         <li><a href="">salas</a></li>
