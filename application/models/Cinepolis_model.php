@@ -19,9 +19,9 @@ class Cinepolis_model extends CI_Model{
     $query = $this->db->query(
       "SELECT P.id_pelicula, P.titulo, P.clasificacion, P.anio_lanzamiento, P.duracion, P.genero, P.sinopsis,
       D.nombre AS director, D.paterno, PR.nombre AS productora
-      FROM cinepolis2.tb_peliculas P
-      LEFT JOIN cinepolis2.tb_directores D ON P.id_director = D.id_director
-      LEFT JOIN cinepolis2.tb_productoras PR ON P.id_productora = PR.id_productora
+      FROM tb_peliculas P
+      LEFT JOIN tb_directores D ON P.id_director = D.id_director
+      LEFT JOIN tb_productoras PR ON P.id_productora = PR.id_productora
       "
     );
 
