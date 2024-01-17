@@ -17,10 +17,10 @@
         <tbody>
             <?php foreach($peliculas as $key=>$value):?>
                 <tr>
-                    <td><?php echo $value->id;?></td>
+                    <td><?php echo $value->id_pelicula;?></td>
                     <td><?php echo $value->titulo;?></td>
                     <td><?php echo $value->clasificacion;?></td>
-                    <td><?php echo $value->anio_de_lanzamiento;?></td>
+                    <td><?php echo $value->anio_lanzamiento;?></td>
                     <td><?php echo $value->duracion;?></td>
                     <td><?php echo $value->genero;?></td>
                     <td><?php echo $value->sinopsis;?></td>
