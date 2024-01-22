@@ -40,14 +40,17 @@ class Cinepolis extends CI_Controller{
 
   public function actores() {
 
+    $this->load->model('Cinepolis_model');
+    $actores = $this->Cinepolis_model->listaActores();
 
     $data = [
       'title' => 'Cinepolis - Actores',
+      'actores' => $actores
     ];
 
     $this->load->view('plantillas/header', $data);
     $this->load->view('actores/index');
-    // $this->load->view('plantillas/footer');
+    $this->load->view('plantillas/footer');
 
   }
 

@@ -8,7 +8,7 @@ class Cinepolis_model extends CI_Model{
     $this->load->database();
   }
 
-  public function listaPeliculas(){
+  public function listaPeliculas() {
 
     //query para llamar la tabla y sus campos.
     /* 
@@ -23,6 +23,14 @@ class Cinepolis_model extends CI_Model{
       LEFT JOIN tb_directores D ON P.id_director = D.id_director
       LEFT JOIN tb_productoras PR ON P.id_productora = PR.id_productora
       "
+    );
+
+    return $query->result();
+  }
+
+  public function listaActores() {
+    $query = $this->db->query(
+      "SELECT id_actor, nombre, materno, fecha_nacimiento FROM tb_actores"
     );
 
     return $query->result();
