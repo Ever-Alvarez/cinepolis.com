@@ -177,7 +177,7 @@ img{
 
 /* Tbla de peliculas, actores, directores, productora, salas */
 .div-table {
-  border: solid green;
+  /* border: solid green; */
   /* position: relative; */
   width: 100%;
   height: 100%;
