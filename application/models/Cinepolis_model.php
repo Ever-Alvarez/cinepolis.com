@@ -35,4 +35,12 @@ class Cinepolis_model extends CI_Model{
 
     return $query->result();
   }
+
+  public function listaDirectores() {
+    $query = $this->db->query(
+      "SELECT id_director, nombre, paterno FROM tb_directores WHERE estatus = 1"
+    );
+
+    return $query->result();
+  }
 }
