@@ -43,4 +43,12 @@ class Cinepolis_model extends CI_Model{
 
     return $query->result();
   }
+
+  public function listaProductoras() {
+    $query = $this->db->query(
+      "SELECT * FROM tb_productoras WHERE estatus = 1"
+    );
+
+    return $query->result();
+  }
 }

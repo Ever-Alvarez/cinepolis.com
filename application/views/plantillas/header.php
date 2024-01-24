@@ -37,8 +37,8 @@
       <ul>
         <li><a href="/cinepolis/peliculas/index">Peliculas</a></li>
         <li><a href="/cinepolis/actores/index">Actores</a></li>
+        <li><a href="/cinepolis/productoras/index">Productoras</a></li>
         <li><a href="/cinepolis/directores/index">Directores</a></li>
-        <li><a href="">Productora</a></li>
         <li><a href="">salas</a></li>
         <li><a href=""></a></li>        
       </ul>

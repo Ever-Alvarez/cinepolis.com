@@ -54,18 +54,4 @@ class Cinepolis extends CI_Controller{
 
   }
 
-  public function directores() {
-    $this->load->model('Cinepolis_model');
-    $directores = $this->Cinepolis_model->listaDirectores();
-
-    $data = [
-      'title' => 'Cinepolis - Directores',
-      'directores' => $directores
-    ];
-
-    $this->load->view('plantillas/header', $data);
-    $this->load->view('directores/index', $data);
-    $this->load->view('plantillas/footer');
-  }
-
 }
