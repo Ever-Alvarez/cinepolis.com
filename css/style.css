@@ -51,7 +51,7 @@ nav ul li a {
 }
 
 main {
-  border: solid rgb(141, 141, 2);
+  /* border: solid rgb(141, 141, 2); */
   /* position: relative; */
   padding: 10px;
   /* height: 100%; */
@@ -191,7 +191,7 @@ img{
 
 td, th {
   text-align: center;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .th-id{
@@ -203,7 +203,8 @@ table {
   margin-right: auto;
   /* table-layout: fixed; */
   width: 100%;
-  border: aqua;
+  /* border: #CFCCCC; */
+  border: #CBCBCB;
 }
 
 /* tr th:first-child {

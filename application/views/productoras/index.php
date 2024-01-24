@@ -19,7 +19,11 @@
                         <td><?php echo $value->id_productora; ?></td>
                         <td><?php echo $value->nombre; ?></td>
                         <td><?php echo $value->telefono; ?></td>
-                        <td><?php echo $value->URL; ?></td>
+                        <td>
+                            <a href="<?php echo $value->URL; ?>" tarjet="_blank">
+                                <?php echo $value->URL; ?>
+                            </a>
+                        </td>
                         <td><?php echo $value->calle; ?></td>
                         <td><?php echo $value->colonia; ?></td>
                         <td><?php echo $value->codigo_postal; ?></td>
