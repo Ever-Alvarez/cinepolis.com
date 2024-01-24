@@ -3,13 +3,13 @@
     <table cellpadding="0" cellspacing="0" border="1">
         <thead>
             <tr>
-                <th width=2% >#</th>
+                <th class="th-id" >#</th>
                 <th>Pelicula</th>
                 <th width=12% >Clasificacion</th>
                 <th width=8% >Año de Lanzamiento</th>
                 <th width=6% >Duración</th>
                 <th>Genero</th>
-                <th width=30% >Sinopsis</th>
+                <th width=29% >Sinopsis</th>
                 <th>Director</th>
                 <th>Productora</th>
             </tr>
