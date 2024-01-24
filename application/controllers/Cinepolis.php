@@ -54,4 +54,19 @@ class Cinepolis extends CI_Controller{
 
   }
 
+  public function productoras() {
+
+    $this->load->model('Cinepolis_model');
+    $productoras = $this->Cinepolis_model->listaProductoras();
+
+    $data = [
+      'title' => 'Cinepolis - Productoras',
+      'productoras' => $productoras
+    ];
+
+    $this->load->view('plantillas/header', $data);
+    $this->load->view('productoras/index', $data);
+    $this->load->view('plantillas/footer');
+  }
+
 }
