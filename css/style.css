@@ -134,15 +134,12 @@ img{
   height: 100%;
   top: 10px;
   bottom: auto;
-}
-
-td, th {
-  text-align: center;
-  font-size: 16px;
-}
-
-.th-id{
-  width: 30px;
+  /* border: 1px solid #CBCBCB; */
+  /* border: 1px solid #696868; */
+  /* border-top: none; */
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
 }
 
 table {
@@ -151,5 +148,34 @@ table {
   /* table-layout: fixed; */
   width: 100%;
   /* border: #CFCCCC; */
-  border: #CBCBCB;
+  border: #696868;
+  border-left: none;
+  border-top: none;
+  border-right: none;
+}
+
+td, th {
+  text-align: center;
+  font-size: 15px;
+}
+
+td{
+  /* border: #CBCBCB; */
+  border-top: none;
+  /* border-bottom: none; */
+  border-left: none;
+  border-right: none;
+  height: 70px;
+}
+
+.th-id{
+  width: 30px;
+}
+
+th{
+  height: 50px;
+  border: 1px solid #696868;
+  /* border-top: none; */
+  border-left: none;
+  border-right: none;
 }
