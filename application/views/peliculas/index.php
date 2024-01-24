@@ -1,6 +1,6 @@
 <main>
     <div class="div-table">
-    <table cellpadding="0" cellspacing="0" border="1" align="center">
+    <table cellpadding="0" cellspacing="0" border="1">
         <thead>
             <tr>
                 <th>#</th>
@@ -9,7 +9,7 @@
                 <th>Año de Lanzamiento</th>
                 <th>Duración</th>
                 <th>Genero</th>
-                <th>Sinopsis</th>
+                <th class="th-sinopsis">Sinopsis</th>
                 <th>Director</th>
                 <th>Productora</th>
             </tr>
