@@ -1,3 +1,7 @@
+<?php
+    $tr = 0;
+    $class;
+?>
 <main>
     <div class="div-table">
         <div class="head-table">
@@ -19,7 +23,12 @@
             </thead>
             <tbody>
                 <?php foreach($peliculas as $key=>$value):?>
-                    <tr>
+                    <?php $tr = $tr + 1; ?>
+                    <?php if($tr % 2 == 0):?>    
+                            <tr style="background-color: #faf9f9;">
+                    <?php else:?>
+                        <tr>
+                    <?php endif;?>
                         <td><?php echo $value->id_pelicula;?></td>
                         <td><?php echo $value->titulo;?></td>
                         <td><?php echo $value->clasificacion;?></td>
