@@ -145,7 +145,8 @@ img{
 
 .head-table{
   /* position: absolute; */
-  border: 1px solid green;
+  /* border: 1px solid green; */
+  background-color: #faf9f9;
   height: 35px;
   /* display: block; */
 }
@@ -154,7 +155,6 @@ img{
   position: relative;
   /* margin-left: 92%; */
   /* margin-top: 3.5px; */
-  /*? ENCIERRA EL ELEMENTO EN SU CONTENEDOR PADRE PARA QUE ESTE NO SE DESBORDE O SALGA */
   /* position: absolute; */
   top: 50%;
   left: 100%;
@@ -184,6 +184,7 @@ table {
   border-left: none;
   border-top: none;
   border-right: none;
+  background-color: #f3f3f3;
 }
 
 td, th {
