@@ -1,7 +1,7 @@
 <main>
     <div class="div-table">
         <div class="head-table">
-            <button class="btn">Agregar Pelicula</button>
+            <button class="btn-Agregar">Agregar Pelicula</button>
         </div>
         <table cellpadding="0" cellspacing="0" border="1">
             <thead>

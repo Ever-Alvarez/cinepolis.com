@@ -136,7 +136,7 @@ img{
   /* bottom: auto; */
   right: 3.5px;
   /* border: solid rgb(1, 70, 160); */
-  border: 1px solid #686868;
+  border: 1px solid #a3a3a3;
   /* border-top: none; */
   border-bottom: none;
   /* border-left: none; */
@@ -144,44 +144,34 @@ img{
 }
 
 .head-table{
-  /* border: solid green; */
-  height: 36px;
+  /* position: absolute; */
+  border: 1px solid green;
+  height: 35px;
+  /* display: block; */
 }
 
-.btn {
-  /* position: relative; */
-  margin-left: 92%;
-  margin-top: 3.5px;
-  background-color: rgb(81, 231, 231);
+.btn-Agregar {
+  position: relative;
+  /* margin-left: 92%; */
+  /* margin-top: 3.5px; */
+  /*? ENCIERRA EL ELEMENTO EN SU CONTENEDOR PADRE PARA QUE ESTE NO SE DESBORDE O SALGA */
+  /* position: absolute; */
+  top: 50%;
+  left: 100%;
+  transform: translate(-103%, -52%);
+  /* display: block; */
+
+  background-color: rgb(108, 187, 252);
   color: #ffffff;
 
   padding: 1px 5px;
   font-size: 12.5px;
   line-height: 2;
   border-radius: 20px;
-  /*! ELIMINAR display: inline-block; */
-  /* margin-bottom: 0; */
-  /*! ELIMINAR font-weight: normal; */
+  
   text-align: center;
-  /*! ELIMINAR vertical-align: middle; */
-  /*? -ms-touch-action: manipulation; */
-      /*? touch-action: manipulation; */
   cursor: pointer;
-  /*! ELIMINAR background-image: none; */
   border: 1px solid transparent;
-  /*! ELIMINAR white-space: nowrap; */
-  /*! ELIMINAR padding: 6px 12px; */
-  /*! font-size: 15px; */
-  /*! line-height: 1.42857143; */
-  /*! ELIMINAR border-radius: 2px; */
-  /*! ELIMINAR -webkit-user-select: none; */
-  /*! ELIMINAR -moz-user-select: none; */
-  /*! ELIMINAR -ms-user-select: none; */
-  /*! ELIMINAR user-select: none; */
-
-  /* color: #ffffff;
-  background-color: #5bc0de;
-  border-color: #46b8da; */
 }
 
 table {
@@ -190,7 +180,7 @@ table {
   /* table-layout: fixed; */
   width: 100%;
   /* border: #CFCCCC; */
-  border: #696868;
+  border: #a3a3a3;
   border-left: none;
   border-top: none;
   border-right: none;
@@ -216,7 +206,7 @@ td{
 
 th{
   height: 50px;
-  border: 1px solid #696868;
+  border: 1px solid #a3a3a3;
   /* border-top: none; */
   border-left: none;
   border-right: none;
