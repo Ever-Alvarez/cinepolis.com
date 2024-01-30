@@ -208,11 +208,8 @@ td{
 th{
   height: 50px;
   border: 1px solid #a3a3a3;
+  background-color: #f2fff8;
   /* border-top: none; */
   border-left: none;
   border-right: none;
-}
-
-thead {
-  background-color: #f0eeee"
 }
