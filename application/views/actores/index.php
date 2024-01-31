@@ -8,7 +8,7 @@
         </div>
         <table cellpadding="0" cellspacing="0" border="1">
             <thead>
-                <tr>
+                <tr class="column-color-si-no">
                     <th>#</th>
                     <th>Nombre</th>
                     <th>Fecha de Nacimiento</th>
@@ -18,7 +18,7 @@
                 <?php foreach($actores as $key=>$value):?>
                     <?php $tr = $tr + 1; ?>
                     <?php if($tr % 2 == 0):?>    
-                        <tr style="background-color: #faf9f9;">
+                        <tr class="column-color-si-no">
                     <?php else:?>
                         <tr>
                     <?php endif;?>
