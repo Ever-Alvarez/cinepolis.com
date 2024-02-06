@@ -35,8 +35,9 @@
     <h1>Cinépolis</h1>
     <nav>
       <ul>
-        <li><a href="/cinepolis/peliculas/index">Peliculas</a></li>
-        <li><a href="/cinepolis/actores/index">Actores</a></li>
+        <!-- <li><a href="peliculas/index">Peliculas</a></li> -->
+        <li><a href=<?php echo base_url('peliculas'); ?>>Peliculas</a></li>
+        <li><a href=<?php echo base_url('actores'); ?>>Actores</a></li>
         <li><a href="/cinepolis/productoras/index">Productoras</a></li>
         <li><a href="/cinepolis/directores/index">Directores</a></li>
         <li><a href="">salas</a></li>
