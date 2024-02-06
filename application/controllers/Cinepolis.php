@@ -5,6 +5,7 @@ class Cinepolis extends CI_Controller{
 
   public function __construct(){
     parent::__construct();
+    // $this->load->helper('url');
   }
 
   public function index(){
@@ -18,69 +19,69 @@ class Cinepolis extends CI_Controller{
     $this->load->view('plantillas/footer');
   }
 
-  public function peliculas(){
+  // public function peliculas(){
 
-    $this->load->model('Cinepolis_model');
-    $peliculas = $this->Cinepolis_model->listaPeliculas();
+  //   $this->load->model('Cinepolis_model');
+  //   $peliculas = $this->Cinepolis_model->listaPeliculas();
     
-    $data = [
-      'title' => 'Cinépolis - Peliculas',
-      'peliculas' => $peliculas
-    ];
+  //   $data = [
+  //     'title' => 'Cinépolis - Peliculas',
+  //     'peliculas' => $peliculas
+  //   ];
 
-    //echo"<pre>";
-    //print_r($peliculas);
-    //echo"</pre>";
+  //   //echo"<pre>";
+  //   //print_r($peliculas);
+  //   //echo"</pre>";
   
-    $this->load->view('plantillas/header', $data);
-    $this->load->view('peliculas/index', $data);
-    // $this->load->view('plantillas/footer');
+  //   $this->load->view('plantillas/header', $data);
+  //   $this->load->view('peliculas/index', $data);
+  //   // $this->load->view('plantillas/footer');
 
-  }
+  // }
 
-  public function actores() {
+  // public function actores() {
 
-    $this->load->model('Cinepolis_model');
-    $actores = $this->Cinepolis_model->listaActores();
+  //   $this->load->model('Cinepolis_model');
+  //   $actores = $this->Cinepolis_model->listaActores();
 
-    $data = [
-      'title' => 'Cinepolis - Actores',
-      'actores' => $actores
-    ];
+  //   $data = [
+  //     'title' => 'Cinepolis - Actores',
+  //     'actores' => $actores
+  //   ];
 
-    $this->load->view('plantillas/header', $data);
-    $this->load->view('actores/index');
-    $this->load->view('plantillas/footer');
+  //   $this->load->view('plantillas/header', $data);
+  //   $this->load->view('actores/index');
+  //   $this->load->view('plantillas/footer');
 
-  }
+  // }
 
-  public function directores() {
-    $this->load->model('Cinepolis_model');
-    $directores = $this->Cinepolis_model->listaDirectores();
+  // public function directores() {
+  //   $this->load->model('Cinepolis_model');
+  //   $directores = $this->Cinepolis_model->listaDirectores();
 
-    $data = [
-      'title' => 'Cinepolis - Directores',
-      'directores' => $directores
-    ];
+  //   $data = [
+  //     'title' => 'Cinepolis - Directores',
+  //     'directores' => $directores
+  //   ];
 
-    $this->load->view('plantillas/header', $data);
-    $this->load->view('directores/index', $data);
-    $this->load->view('plantillas/footer');
-  }
+  //   $this->load->view('plantillas/header', $data);
+  //   $this->load->view('directores/index', $data);
+  //   $this->load->view('plantillas/footer');
+  // }
 
-  public function productoras() {
+  // public function productoras() {
 
-    $this->load->model('Cinepolis_model');
-    $productoras = $this->Cinepolis_model->listaProductoras();
+  //   $this->load->model('Cinepolis_model');
+  //   $productoras = $this->Cinepolis_model->listaProductoras();
 
-    $data = [
-      'title' => 'Cinepolis - Productoras',
-      'productoras' => $productoras
-    ];
+  //   $data = [
+  //     'title' => 'Cinepolis - Productoras',
+  //     'productoras' => $productoras
+  //   ];
 
-    $this->load->view('plantillas/header', $data);
-    $this->load->view('productoras/index', $data);
-    $this->load->view('plantillas/footer');
-  }
+  //   $this->load->view('plantillas/header', $data);
+  //   $this->load->view('productoras/index', $data);
+  //   $this->load->view('plantillas/footer');
+  // }
 
 }
