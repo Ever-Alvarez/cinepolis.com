@@ -1,0 +1,22 @@
+<?php
+defined('BASEPATH') OR exit('No direct script access allowed');
+
+class Productoras extends CI_Controller {
+
+    public function __construct() {
+        parents::__construct();
+    }
+
+    public function index() {
+        $this->load->model('Cinepolis_model');
+        $productoras = $this->Cinepolis_model->listaProductoras();
+
+        $data = [
+            'title' => 'Cinepolis - Productoras',
+            'productoras' => $productoras
+        ];       
+
+        $this->load->view('plantillas/header', $data);
+        $this->load->view('productoras/index', $data);
+    }
+}
