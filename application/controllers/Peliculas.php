@@ -9,8 +9,8 @@ class Peliculas extends CI_Controller{
 
     public function index(){
 
-        $this->load->model('Cinepolis_model');
-        $peliculas = $this->Cinepolis_model->listaPeliculas();
+        $this->load->model('Peliculas_model');
+        $peliculas = $this->Peliculas_model->listaPeliculas();
         
         $data = [
             'title' => 'Cinépolis - Peliculas',
