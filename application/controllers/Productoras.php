@@ -8,8 +8,8 @@ class Productoras extends CI_Controller {
     }
 
     public function index() {
-        $this->load->model('Cinepolis_model');
-        $productoras = $this->Cinepolis_model->listaProductoras();
+        $this->load->model('Productoras_model');
+        $productoras = $this->Productoras_model->listaProductoras();
 
         $data = [
             'title' => 'Cinepolis - Productoras',
