@@ -1,5 +1,5 @@
 <?php
-define('BASEPATH') OR exist('No direct script acces allowed');
+defined('BASEPATH') OR exit('No direct script access allowed');
 
 Class Peliculas_model extends CI_Model {
 
@@ -8,7 +8,7 @@ Class Peliculas_model extends CI_Model {
     }
 
     public function listaPeliculas() {
-        $query = $this->bd->query(
+        $query = $this->db->query(
             "SELECT P.id_pelicula, P.clasificacion, P.titulo, P.anio_lanzamiento, P.duracion, P.genero, P.sinopsis,
             D.nombre AS director, D.paterno, PR.nombre AS productora
             FROM tb_peliculas P
