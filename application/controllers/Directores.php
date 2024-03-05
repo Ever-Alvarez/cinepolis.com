@@ -8,8 +8,8 @@ class Directores extends CI_Controller {
     }
 
     public function index() {
-        $this->load->model('Cinepolis_model');
-        $directores = $this->Cinepolis_model->listaDirectores();
+        $this->load->model('Directores_model');
+        $directores = $this->Directores_model->listaDirectores();
 
         $data = [
             'title' => 'Cinepolis - Directores',
