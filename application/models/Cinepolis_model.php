@@ -28,13 +28,13 @@ class Cinepolis_model extends CI_Model{
   //   return $query->result();
   // }
 
-  public function listaActores() {
-    $query = $this->db->query(
-      "SELECT id_actor, nombre, materno, fecha_nacimiento FROM tb_actores"
-    );
+  // public function listaActores() {
+  //   $query = $this->db->query(
+  //     "SELECT id_actor, nombre, materno, fecha_nacimiento FROM tb_actores"
+  //   );
 
-    return $query->result();
-  }
+  //   return $query->result();
+  // }
 
   public function listaDirectores() {
     $query = $this->db->query(

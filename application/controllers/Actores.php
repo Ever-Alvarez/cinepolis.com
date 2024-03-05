@@ -8,8 +8,8 @@ class Actores extends CI_Controller{
     }
 
     public function index() {
-        $this->load->model('Cinepolis_model');
-        $actores = $this->Cinepolis_model->listaActores();
+        $this->load->model('Actores_model');
+        $actores = $this->Actores_model->listaActores();
 
         $data = [
             'title' => 'Cinepolis - Actores',
