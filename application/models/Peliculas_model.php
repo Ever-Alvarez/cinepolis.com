@@ -14,6 +14,7 @@ Class Peliculas_model extends CI_Model {
             FROM tb_peliculas P
             LEFT JOIN tb_directores D ON P.id_director = D.id_director
             LEFT JOIN tb_productoras PR ON P.id_productora = PR.id_productora
+            WHERE P.estatus = 1
             "
         );
 
