@@ -36,7 +36,7 @@
                         <td><?php echo $value->duracion;?></td>
                         <td><?php echo $value->genero;?></td>
                         <td><?php echo $value->sinopsis;?></td>
-                        <td><?php echo $value->director;?> <?php echo $value->paterno;?></td>
+                        <td><?php echo $value->director;?> <br> <?php echo $value->paterno;?></td>
                         <td><?php echo $value->productora;?></td>
                     </tr>
                 <?php endforeach;?>
