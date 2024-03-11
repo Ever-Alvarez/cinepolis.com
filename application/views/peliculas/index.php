@@ -38,7 +38,7 @@
                         <td><?php echo $value->genero;?></td>
                         <td><?php echo $value->sinopsis;?></td>
                         <td><?php echo $value->director;?> <br> <?php echo $value->paterno;?></td>
-                        <td><?php echo $value->productora;?></td>
+                        <td><?php echo $value->nombreP1;?> <br> <?php echo $value->nombreP2;?></td>
                     </tr>
                 <?php endforeach;?>
             </tbody>
