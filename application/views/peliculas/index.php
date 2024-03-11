@@ -30,7 +30,8 @@
                         <tr>
                     <?php endif;?>
                         <td><?php echo $value->id_pelicula;?></td>
-                        <td><?php echo $value->titulo;?></td>
+                        <!-- <td><?php //echo $value->titulo;?></td> -->
+                        <td><?php echo $value->tituloP1;?> <br> <?php echo $value->tituloP2;?></td>
                         <td><?php echo $value->clasificacion;?></td>
                         <td><?php echo $value->anio_lanzamiento;?></td>
                         <td><?php echo $value->duracion;?></td>

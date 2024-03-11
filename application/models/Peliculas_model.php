@@ -9,7 +9,7 @@ Class Peliculas_model extends CI_Model {
 
     public function listaPeliculas() {
         $query = $this->db->query(
-            "SELECT P.id_pelicula, P.clasificacion, P.titulo, P.anio_lanzamiento, P.duracion, P.genero, P.sinopsis,
+            "SELECT P.id_pelicula, P.clasificacion, P.titulo, P.tituloP1, P.tituloP2, P.anio_lanzamiento, P.duracion, P.genero, P.sinopsis,
             D.nombre AS director, D.paterno, PR.nombre AS productora
             FROM tb_peliculas P
             LEFT JOIN tb_directores D ON P.id_director = D.id_director
