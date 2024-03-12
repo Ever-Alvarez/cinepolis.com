@@ -7,6 +7,17 @@
         return "{$fecha[1]}-{$fecha[2]}-{$fecha[0]}";
     }
 
+    function formatoProductora($productora) {
+        $productora = explode(" ", $productora);
+
+        for($i = 0; $i<count($productora); $i++) {
+            if($i == 0)
+                echo $productora[$i];
+            else
+                echo "<br>{$productora[$i]}";
+        }
+    }
+
 ?>
 <main>
     <div class="div-table">
@@ -44,7 +55,7 @@
                         <td><?php echo $value->genero;?></td>
                         <td><?php echo $value->sinopsis;?></td>
                         <td><?php echo $value->director;?> <br> <?php echo $value->paterno;?></td>
-                        <td><?php echo $value->nombreP1;?> <br> <?php echo $value->nombreP2;?></td>
+                        <td><?php echo formatoProductora($value->productora);?></td>
                     </tr>
                 <?php endforeach;?>
             </tbody>
