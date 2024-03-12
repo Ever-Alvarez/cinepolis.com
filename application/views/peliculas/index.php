@@ -1,6 +1,12 @@
 <?php
     $tr = 0;
     $class;
+
+    function formatoFecha($fecha) {
+        $fecha = explode("-", $fecha);
+        return "{$fecha[1]}-{$fecha[2]}-{$fecha[0]}";
+    }
+
 ?>
 <main>
     <div class="div-table">
@@ -33,7 +39,7 @@
                         <!-- <td><?php //echo $value->titulo;?></td> -->
                         <td><?php echo $value->tituloP1;?> <br> <?php echo $value->tituloP2;?></td>
                         <td><?php echo $value->clasificacion;?></td>
-                        <td><?php echo $value->anio_lanzamiento;?></td>
+                        <td><?php echo formatoFecha($value->anio_lanzamiento);?></td>
                         <td><?php echo $value->duracion;?></td>
                         <td><?php echo $value->genero;?></td>
                         <td><?php echo $value->sinopsis;?></td>
