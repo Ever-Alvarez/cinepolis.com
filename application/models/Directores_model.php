@@ -8,7 +8,7 @@ class Directores_model extends CI_Model {
 
     public function listaDirectores() {
         $query = $this->db->query(
-            "SELECT id_director, nombre, paterno FROM tb_directores WHERE estatus = 1"
+            "SELECT id_director, nombre, paterno, fecha_nacimiento FROM tb_directores WHERE estatus = 1"
         );
 
         return $query->result();

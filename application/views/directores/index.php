@@ -1,5 +1,11 @@
 <?php
     $tr = 0;
+
+    function formatoFecha($fecha) {
+        $fecha = explode("-", $fecha);
+
+        return "{$fecha[2]}-{$fecha[1]}-{$fecha[0]}";
+    }
 ?>
 <main>
     <div class="div-table">
@@ -11,6 +17,7 @@
                 <tr class="column-color-si-no">
                     <th>#</th>
                     <th>Nombre</th>
+                    <th>Fecha de Nacimiento</th>
                 </tr>
             </thead>
             <tbody>
@@ -23,6 +30,7 @@
                     <?php endif;?>
                         <td><?php echo $value->id_director;?></td>
                         <td><?php echo $value->nombre.' '.$value->paterno;?></td>
+                        <td><?php echo formatoFecha($value->fecha_nacimiento);?></td>
                     </tr>
                 <?php endforeach;?>
             </tbody>
