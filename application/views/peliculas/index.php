@@ -18,6 +18,23 @@
         }
     }
 
+    function formatoTitulo($titulo) {
+        $titulo = explode(" ", $titulo);
+        
+        for($i = 0; $i<count($titulo); $i++) {
+            if($i == 0 )
+                echo $titulo[$i];
+            else
+                echo "<br>{$titulo[$i]}";
+        }
+    }
+
+    function formatoHora($hora){
+        $hora = explode(":", $hora);
+
+        return "{$hora[0]}:{$hora[1]}";
+    }
+
 ?>
 <main>
     <div class="div-table">
@@ -48,10 +65,10 @@
                     <?php endif;?>
                         <td><?php echo $value->id_pelicula;?></td>
                         <!-- <td><?php //echo $value->titulo;?></td> -->
-                        <td><?php echo $value->tituloP1;?> <br> <?php echo $value->tituloP2;?></td>
+                        <td><?php echo formatoTitulo($value->titulo);?></td>
                         <td><?php echo $value->clasificacion;?></td>
                         <td><?php echo formatoFecha($value->anio_lanzamiento);?></td>
-                        <td><?php echo $value->duracion;?></td>
+                        <td><?php echo formatoHora($value->duracion);?></td>
                         <td><?php echo $value->genero;?></td>
                         <td><?php echo $value->sinopsis;?></td>
                         <td><?php echo $value->director;?> <br> <?php echo $value->paterno;?></td>
