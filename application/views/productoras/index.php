@@ -1,5 +1,16 @@
 <?php
     $tr = 0;
+
+    function formatoProductoras($productoras) {
+        $productoras = explode(" ", $productoras);
+
+        for($i = 0; $i<count($productoras); $i++) {
+            if($i == 0)
+                echo $productoras[$i];
+            else
+                echo "<br>{$productoras[$i]}";
+        }
+    }
 ?>
 <main>
     <div class="div-table">
@@ -28,7 +39,7 @@
                         <tr>
                     <?php endif;?>
                         <td><?php echo $value->id_productora; ?></td>
-                        <td><?php echo $value->nombre; ?></td>
+                        <td><?php echo formatoProductoras($value->nombre); ?></td>
                         <td><?php echo $value->telefono; ?></td>
                         <td>
                             <a href="<?php echo $value->URL; ?>" tarjet="_blank">
